@@ -28,13 +28,13 @@ public class BOJ_10812 {
 				list.add(j-1, temp);
 			}
 		}
+		in.close();
 		
 		
 		ArrayList<String> result = new ArrayList<String>();
 		for (Integer integer : list) {
 			result.add(String.valueOf(integer));
 		}
-		
 		System.out.println(String.join(" ", result));
 		
 	}
