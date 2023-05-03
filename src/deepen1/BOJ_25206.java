@@ -21,6 +21,7 @@ public class BOJ_25206 {
 		
 		Double sum = 0.0, totalScore = 0.0; 
 		Double score, subjectGrade;
+		
 		while (in.hasNextLine()) {
 			String[] input = in.nextLine().split(" ");
 			score = Double.parseDouble(input[1]);
