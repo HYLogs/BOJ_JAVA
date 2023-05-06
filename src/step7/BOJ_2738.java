@@ -9,21 +9,17 @@ public class BOJ_2738 {
 		int m = in.nextInt();
 		in.nextLine();
 		
-		int[][] Amatrix = new int[n][m];
-		int[][] Bmatrix = new int[n][m];
+		int[][] matrix = new int[n*2][m];
 		
-		for(int i=0; i < n; i++)
+		for(int i=0; i < n*2; i++)
 			for(int j=0; j < m; j++)
-				Amatrix[i][j] = in.nextInt();
-		for(int i=0; i < n; i++)
-			for(int j=0; j < m; j++)
-				Bmatrix[i][j] = in.nextInt();
+				matrix[i][j] = in.nextInt();
 		
 		StringBuilder sb = new StringBuilder();
 		
 		for(int i=0; i < n; i++) {
 			for(int j=0; j < m; j++)
-				sb.append(Amatrix[i][j] + Bmatrix[i][j] + " ");
+				sb.append(matrix[i][j] + matrix[i+n][j] + " ");
 			sb.append("\n");
 		}
 		System.out.println(sb);
