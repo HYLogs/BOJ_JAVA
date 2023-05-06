@@ -22,6 +22,6 @@ public class BOJ_2566 {
 		int column = (index%n)+1;
 		
 		System.out.println(max + "\n" + row + " " + column);
-		
+		in.close();
 	}
 }
