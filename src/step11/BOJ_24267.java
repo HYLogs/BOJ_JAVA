@@ -12,5 +12,4 @@ public class BOJ_24267 {
 		// nC3 = n!/(n-3)!*3! = n * (n-1) * (n-2)/6
 		System.out.println(n * (n-1) * (n-2)/6 + "\n" + 3);
 	}
-
 }
